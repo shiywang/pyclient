@@ -74,16 +74,13 @@ class DeviceDelegate(btle.DefaultDelegate):
             elif data[16] == 0xAB:
                 val = parse_measure_data(data)
                 print(f"Temperature: {val}")
-                print("No sending temp data now")
                 # ws_send_data("update", test_device_id, val, DeviceType.TEMP)
             elif data[16] == 0x92:
                 val = parse_measure_data(data)
                 print(f"Heart Rate: {val}")
-                print("Heart Rate: No support API yet send to server")
             elif data[16] == 0x9D:
                 val = parse_measure_data(data)
                 print(f"Battery check: {val}")
-                print("Battery check: No support API yet send to server")
             else:
                 pass
                 # print("Received data %s " % hexlify(data))
