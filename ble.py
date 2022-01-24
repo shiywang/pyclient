@@ -100,7 +100,7 @@ def device_handler(devices):
             #     log.debug(dev_data)
             #     return
 
-            # print("dev data ", len(dev_data[1]))
+            print("dev data ", len(dev_data), len(dev_data[1]))
             dev_name = dev_data[1][2] or None
             if dev_name == TARGET_NAME:
                 log.debug("Found Mezoo Device")
