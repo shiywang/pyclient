@@ -6,6 +6,6 @@ filename = "./data_store/test.txt"
 
 
 base_ip = "nelab.ddns.umass.edu"
-mqtt_port = "32513"
+mqtt_port = "30482"
 
-base_url = "https://" + base_ip + "/"
+base_url = "http://" + base_ip + "/"
